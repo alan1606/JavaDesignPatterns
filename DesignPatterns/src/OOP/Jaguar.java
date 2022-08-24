@@ -1,6 +1,6 @@
 package OOP;
 
-public class Jaguar extends Animal implements IFeline{
+public class Jaguar extends Animal implements IWildFeline{
     private int age;
     private float weight;
 
@@ -46,15 +46,7 @@ public class Jaguar extends Animal implements IFeline{
                 "\nMy weight = " + weight;
     }
 
-    @Override
-    public void roar() {
-        System.out.println("Jaguar is roaring");
-    }
 
-    @Override
-    public void meow() {
-        throw new UnsupportedOperationException("Jaguar doesn't meow");
-    }
 
     @Override
     public void hunt() {
@@ -69,5 +61,10 @@ public class Jaguar extends Animal implements IFeline{
     @Override
     public void eat() {
         System.out.println("Jaguar is eating");
+    }
+
+    @Override
+    public void roar() {
+        System.out.println("Jaguar is roaring");
     }
 }

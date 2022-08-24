@@ -17,6 +17,9 @@ public class Main {
         myJaguar.hunt();
         myJaguar.roar();
        // myJaguar.meow();
+
+        Jaguar segregation = new Jaguar();
+        segregation.roar();
     }
 
 }
